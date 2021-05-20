@@ -1,0 +1,6 @@
+requests==2.25.1
+wheel
+Pillow==8.2.0
+Django==2.2.23
+pytz==2021.1
+djangorestframework==3.12.4

@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "1c00d3cc-f8e3-4675-a2ce-e5a861190113",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "currency-converter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 15833a46c06ddf76dc84b8444a58f954af23dd83",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "from_currency_type",
+							"value": "EGP",
+							"description": "USD, EGP, EUR",
+							"type": "text"
+						},
+						{
+							"key": "to_currency_type",
+							"value": "USD",
+							"description": "USD, EGP, EUR",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/currency-converter/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"currency-converter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "At123123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

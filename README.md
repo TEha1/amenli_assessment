@@ -36,5 +36,5 @@ $ python manage.py runserver
 ### Postman
 
 - Import the collection json file from here ``postman/Task.postman_collection.json``.
-- Login to the admin using these credentials ``username: admin / password: admin``
+- Login to the admin from this link (http://127.0.0.1:8000/admin/) using these credentials ``username: admin / password: admin``
 - Then you can check the currencies count (http://127.0.0.1:8000/admin/currency/usercurrency/)
